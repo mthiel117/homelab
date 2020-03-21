@@ -1,4 +1,4 @@
-ansible_httpapi_host: 192.168.1..248
+ansible_httpapi_host: 192.168.1.248
 ansible_host: 192.168.1.248
 ansible_connection: httpapi
 ansible_httpapi_use_ssl: True

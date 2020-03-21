@@ -101,7 +101,7 @@ ethernet_interfaces:
     mtu: 1500
     type: routed
     ip_address: 10.0.0.0/31
-  Ethernet47:
+  Ethernet48:
     peer: DC1-LEAF2A
     peer_interface: Ethernet47
     peer_type: l3leaf
