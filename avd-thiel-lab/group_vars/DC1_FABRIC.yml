@@ -60,7 +60,7 @@ l3leaf:
     platform: vEOS-LAB
     bgp_as: 65001
     spines: [DC1-SPINE1]
-    uplink_to_spine_interfaces: [Ethernet47, Ethernet47]
+    uplink_to_spine_interfaces: [Ethernet47]
 #    mlag_interfaces: [Ethernet5, Ethernet6]
     spanning_tree_mode: mstp
     spanning_tree_priority: 4096
