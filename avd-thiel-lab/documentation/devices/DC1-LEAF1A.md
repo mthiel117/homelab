@@ -128,8 +128,8 @@ AAA Not Configured
 ### Local Users Device Configuration
 
 ```eos
-username admin privilege 15 role network-admin secret sha512 $6$Df86J4/SFMDE3/1K$Hef4KstdoxNDaami37cBquTWOTplC.miMPjXVgQxMe92.e5wxlnXOLlebgPj8Fz1KO0za/RCO7ZIs4Q6Eiq1g1
-username cvpadmin privilege 15 role network-admin secret sha512 $6$rZKcbIZ7iWGAWTUM$TCgDn1KcavS0s.OV8lacMTUkxTByfzcGlFlYUWroxYuU7M/9bIodhRO7nXGzMweUxvbk8mJmQl8Bh44cRktUj.
+username admin privilege 15 role network-admin secret sha512 $6$VjNhzmCAxU1sUoTD$MLREvtwRBkraoOII322Yo5NTXSrSRpzsAFcq2JcW5GZOtQF4M3hpJZS1DeO0o/zuvY66JffJD0isnW0Tj6fxH/
+username cvpadmin privilege 15 role network-admin secret sha512 $6$PpXEtQeyPZGN34LR$hZ8n2FOw/6qBLFZPXJunTDwOVN9NIsLmNTlVe7d4QZq82G3iDYxmFoM5umGDqlLZQQTebCQWBrHFbse8fFmse1
 !
 ```
 
