@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  gather_facts: no
+  vars_prompt:
+
+    - name: username
+      prompt: "What is your username?"
+      private: no
+
+    - name: password
+      prompt: "What is your password?"
+
+    - name: release_version
+      prompt: "Product release version"
+      # add default value to prompt
+      default: "1.0"
+      private: no
+
+  tasks:
+
+    - debug:
+        msg: 'Logging in as {{ username }} with password {{ password }} version {{ release_version }}'
