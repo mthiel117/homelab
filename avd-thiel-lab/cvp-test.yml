@@ -1,0 +1,32 @@
+---
+- name: Playbook to demonstrate cv_container module.
+  hosts: CVP-1
+  connection: local
+  gather_facts: no
+  collections:
+    - arista.cvp
+  vars:
+    containers_provision:
+        Fabric:
+          parent_container: Tenant
+        Spines:
+          parent_container: Fabric
+          devices:
+            #- DC1-SPINE1
+        Leaves:
+          parent_container: Fabric
+          configlets:
+              - vlans
+          devices:
+            - DC1-LEAF1A
+            #- DC1-LEAF2A
+
+  tasks:
+    - name: "Gather CVP facts from {{inventory_hostname}}"
+      cv_facts:
+      register: cvp_facts
+
+    - name: "Build Container topology on {{inventory_hostname}}"
+      cv_container:
+        topology: '{{containers_provision}}'
+        cvp_facts: '{{cvp_facts.ansible_facts}}'

@@ -19,4 +19,4 @@
   tasks:
 
     - debug:
-        msg: 'Logging in as {{ username }} with password {{ password }} version {{ release_version }}'
+        msg: 'Logging in as {{ username }} with password {{ password }} version {{ release_version }} flatten {{ [3, [4, 2] ] | flatten | max}}'

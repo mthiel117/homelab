@@ -7,4 +7,4 @@ ansible_user: cvpadmin
 ansible_password: cvpadmin123
 ansible_network_os: eos
 ansible_httpapi_port: 443
-ansible_python_interpreter: $(which python)
+#ansible_python_interpreter: $(which python)

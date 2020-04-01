@@ -33,10 +33,10 @@ all:
             ansible_httpapi_use_ssl: true
             ansible_httpapi_validate_certs: false
 
-        DC1_TENANTS_NETWORKS:
-          children:
-            DC1_LEAFS:
+        # DC1_TENANTS_NETWORKS:
+        #   children:
+        #     DC1_LEAFS:
 
-        DC1_SERVERS:
-          children:
-            DC1_LEAFS:
+        # DC1_SERVERS:
+        #   children:
+        #     DC1_LEAFS:
